@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(220, 245, 236);
+        }
+        .cantainer{
+            background-color: rgb(121, 196, 164);
+            border: 3px solid rgb(46, 167, 56);
+
+            /* we can set margin/padding top, bottom, right and left like this */
+            /* padding-bottom: 79px;
+            padding -top: 79px;
+            padding-left: 34px; */
+
+            /* padding: top right bootom left; */
+            /* padding: 23px 56px 6px 78px;  */
+
+            /* padding: y(top/bottom) x(left/right); */
+            padding: 34px 19px; 
+            margin: 34px 19px;
+            border-radius: 20px;
+            width: 233px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="cantainer">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse excepturi vero quas sunt minima accusantium, quisquam quod recusandae? Quo obcaecati magnam beatae. Error beatae deserunt dolorum, illo quod quaerat.</p>
+    </div>
+
+    <div class="cantainer">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse excepturi vero quas sunt minima accusantium, quisquam quod recusandae? Quo obcaecati magnam beatae. Error beatae deserunt dolorum, illo quod quaerat.</p>
+    </div>
+    
+    <div class="cantainer">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore esse excepturi vero quas sunt minima accusantium, quisquam quod recusandae? Quo obcaecati magnam beatae. Error beatae deserunt dolorum, illo quod quaerat.</p>
+    </div>
+</body>
+</html>

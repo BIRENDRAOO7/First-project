@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Fom</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="form.php">
+        <DIV>
+            First Name: <input type="text" name="myFirstName" id="firstname" placeholder="Enter First Name">
+        </DIV>
+        <br>
+        <DIV>
+            Last Name: <input type="text" name="myLastName" id="lastname" placeholder="Enter Last Name">
+        </DIV>
+        <br>
+        <DIV>
+            Email: <input type="text" name="myemail" id="email" placeholder="Enter Email Address">
+        </DIV>
+        <br>
+        <DIV>
+            Password: <input type="password" name="myPassword" id="password">
+        </DIV>
+        <br>
+        <DIV>
+            Gender: <br>Male<input type="radio" name="myGender" id="gender">
+                    <br>Female<input type="radio" name="myGender" id="gender">
+                    <br>Other<input type="radio" name="myGender" id="gender">
+        </DIV>
+        <br>
+        <DIV>
+            Age: <input type="number" name="myAge" id="age">
+        </DIV>
+        <br>
+        <DIV>
+            Preference: <br>Acrylic Painting<input type="checkbox" name="myPreference" id="preference">
+                        <br>Oil Painting<input type="checkbox" name="myPreference" id="preference">
+                        <br>Water Color Painting<input type="checkbox" name="myPreference" id="preference">
+        </DIV>
+        <br>
+        <div>
+            Select Occupation: <select name="myOccupation" id="occupation">
+                                <option value="student">Student</option>
+                                <option value="techer">Teacher</option>
+                                <option value="staff">staff</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            Bio: <textarea name="MyBio" id="bio" cols="25" rows="5" placeholder="Share few lines about yourself"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+</html>
