@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css position: Satic (default), absolute, relative, fixed and sticky */
+        .box{
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+            /* Relative: position the element relative to its normal position */
+            /* position: relative; */
+
+            /* Absolute: position the element relative to the position or its first parent  */
+            /* position: absolute; */
+            /* top: 34px;
+            left: 34px; */
+            
+            /* Fixed: position the element relative to the browser window */
+            /* position: fixed;
+            right: 40px; */
+
+            /* Sticky:  */
+            position: sticky;
+            top: 3px;
+
+        }
+        .container{
+            border: 2px solid red;
+            background-color: rgb(255, 224, 224);
+            height: 1200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">Box 1</div>
+        <div class="box" id="box2">Box 2</div>
+        <div class="box" id="box3">Box 3</div>
+        <div class="box" id="box4">Box 4</div>
+    </div>
+</body>
+</html>
