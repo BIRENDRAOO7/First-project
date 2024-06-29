@@ -1,0 +1,102 @@
+body{
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/171/365/desktop-wallpaper-man-fitness-on-greepx-gym-men.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-top: 12px;
+}
+
+.navbar .logo {
+    /* flex: 1; */
+    margin-left: 74px;
+    width: 332px;
+}
+
+.navbar .logo img {
+    height: 74px;
+}
+
+.navbar .nav-links {
+    /* flex: 50; */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .nav-links a:hover {
+    color: #f0a500;
+}
+.btn{
+    background-color: black;
+    padding: 12px 24px;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin: 0px 16px;
+}
+.btn-right{
+    margin-right: 74px;
+}
+.form-container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid white;
+    width: 580px;
+    height: 480px;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1f1f1f;
+}
+
+button {
+    padding: 10px;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 5px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #929004;
+}
