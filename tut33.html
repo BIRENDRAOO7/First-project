@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After pseudo selector</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            content: "";
+            background: url('https://static.sadhguru.org/d/46272/1633199491-1633199490440.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        .navigation{
+            font-size: 18px;
+            display: flex;
+        }
+        li{
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section{
+            height: 400px;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* border: 2px solid red; */
+            justify-content: center;
+        }
+        /* section::after{
+            content: "This is the content";
+        } */
+         h1{
+            font-size: 4rem;
+         }
+         p{
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nostrum dolor corrupti alias voluptatum tempore sunt ex dicta, at itaque sint, doloremque ad? Sequi recusandae repudiandae adipisci velit! Cum provident fugit assumenda ipsa vero?</p>
+    </section>
+</body>
+</html>
