@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth pseudo selector</title>
+    <style>
+        .container{
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+        input{
+            display: block;
+        }
+        input[type='text']{
+            padding: 23px;
+            border: 2px solid red;
+        }
+        a[target]{
+          font-size: 44px;
+          color: blueviolet;  
+        }
+        a[target='_self']{
+          font-size: 34px;
+          color: rgb(46, 43, 226);  
+        }
+        input[type='email']{
+            color: yellowgreen;
+            border: 2px solid black;
+        }
+        /* This will apply css for third child */
+        /* li:nth-child(3){
+            color: brown;
+        }
+        li:nth-child(2n+0){
+            color: rgb(33, 197, 47);
+        } */
+        li:nth-child(3n+3){
+            color: rgb(33, 50, 197);
+        }
+        /* odd child */
+        li:nth-child(odd){
+            background-color: chocolate;
+        }
+        /* even child */
+        li:nth-child(even){
+            background-color: rgb(174, 30, 210);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.comn" target="_blank">Go to Google</a></h1>
+        <h1><a href="http://facebook.comn" target="_self">Go to Fackbook</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your emial">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item1</li>
+            <li class="item" id="item-2">item2</li>
+            <li class="item" id="item-3">item3</li>
+            <li class="item" id="item-4">item4</li>
+            <li class="item" id="item-5">item5</li>
+            <li class="item" id="item-6">item6</li>
+            <li class="item" id="item-7">item7</li>
+            <li class="item" id="item-8">item8</li>
+            <li class="item" id="item-9">item9</li>
+            <li class="item" id="item-10">item10</li>
+            
+        </ul>
+    </div>
+</body>
+</html>
