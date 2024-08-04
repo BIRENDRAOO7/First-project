@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500vh;
+            margin: 0;
+        }
+        .line-container{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            overflow: hidden;
+        }
+        svg{
+            display: inline-block;
+            height: 100%;
+
+        }
+        section{
+            height: 100vh;
+            display: grid;
+            place-content: center;
+            font-size: 4em;
+        }
+        .one{
+            background: url(https://images.unsplash.com/photo-1513553404607-988bf2703777?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+        }
+
+        .two{
+            font-size: 6rem;
+            position: relative;
+            overflow: hidden;
+        }
+        p{
+            position: absolute;
+            z-index: -1;
+            color: rgb(241, 241, 241);
+            top: 10%;
+            left: 20%;
+            white-space: nowrap;
+            font-size: 30rem;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="line-container">
+        <svg viewBox="0 0 242 1443" fill="none" preservAspectRatio="xMidYMax meet">
+            <path d="M117 0C117 553.2 117 693.5 117 694.5M117 694.5C107 694.833 85.7 692.6 80.5 681C72 676.333 50.9 667 34.5 667C14 667 12 678.5 15 698C17.4 713.6 22.6667 739.5 25 750.5L15 785.5C13.1666 814.167 28.5 873.4 104.5 881C180.5 888.6 215.833 844.167 224 821C227 802.667 229.8 763.7 217 754.5C217 752.9 223 716.167 226 698C229 685.333 229.1 661.4 205.5 667C181.9 672.6 162.333 682.333 155.5 686.5L117 694.5ZM117 694.5C97.8 1145.7 93 1260.5 93 1261.5C101.5 1256.67 128.6 1254.8 169 1286C201 1296.5 213 1293 239 1339C225 1374.5 229 1392 169 1411C136.6 1430.6 124.167 1437.83 122 1439L120.5 1405.5C103 1395.67 66.9 1371.6 62.5 1354C51.5 1367 47.5 1376 3.5 1381C8.3 1366.2 12.8333 1351.83 14.5 1346.5L3.5 1311.5C16.3333 1310.17 46.1 1313.1 62.5 1335.5C84.5 1318 102 1301.5 126 1298" stroke="#DE4F4F" stroke-width="4"/>
+            </svg>
+            
+    </div> 
+    <section class="one">
+        <h1 class="scroll" data-rate=".4" data-direction="vertical">Ocaean Stuff</h1>
+    </section>
+    <section class="two">
+        <h1 class="scroll" data-rate=".2" data-direction="vertical">omg scroll</h1>
+        <p>Big watermark</p>
+    </section>
+
+    <script>
+        let path = document.querySelector('path')
+        let pathLenght = path.getTotalLength()
+
+        path.style.strokeDasharray = pathLenght + ' ' + pathLenght;
+
+        path.style.strokeDashoffset = pathLenght;
+
+        window.addEventListener('scroll', () => {
+            var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+            var drawLength = pathLenght * scrollPercentage;
+
+            path.style.strokeDashoffset = pathLenght - drawLength;
+        })
+    </script>
+</body>
+</html>
