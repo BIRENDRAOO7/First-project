@@ -24,6 +24,8 @@
 // document.getElementById("root"). append(h1)
 
 
+
+//-------------------------------------------------//
 //----<h1 class ="header">------
 // const element = <h1 className = "header">This is JSX</h1>
 // console.log(element)
@@ -31,6 +33,8 @@
 // ReactDOM.render(element, document.getElementById("root"))
 
 
+
+//-------------------------------------------------//
 // ----JSX----
 // ReactDOM.render(<h1 className = "header">This is JSX</h1>, document.getElementById("root"))
 
@@ -46,7 +50,7 @@
 
 
 
-
+//-------------------------------------------------//
 /*
 Challenge:
 Create a navbar in JSX:
@@ -72,7 +76,7 @@ Create a navbar in JSX:
 
 
 
-
+//-------------------------------------------------//
 /*
 Challenge: fix our code
 
@@ -96,7 +100,7 @@ Don't forgot, you not using CDNs anymore, so there's no global "ReactDOM" variab
 
 
 
-
+//-------------------------------------------------//
 /*
 Challenge: Starting from scratch, build and render the HTML for our section project. Check the Google slide for what you're trying to build.
 
@@ -123,3 +127,227 @@ just like in HTML. In the slide, I have it set to 40px.
 //     </div>
 // )
 // ReactDOM.render(page, document.getElementById("root"))
+
+
+
+//-------------------------------------------------//
+// ----- 13. Build a React info site | Custom Components part 1----
+/*
+Challenge:
+Part 1: Create a page of your own using a custom page component
+
+It should return an ordered list with the reasons why you're excited to be learning React :)
+
+Render your list to the page
+
+*/
+
+// function Page(){
+// return(
+//     <ol>
+//         <li>It's popular library, so I'll be able to fit in with the cool kids </li>
+//         <li>I'm more likely to get a job as a developer if I know React </li>
+//     </ol>
+// )
+// }
+// ReactDOM.render(<Page/>, document.getElementById("root"))
+
+
+
+//-------------------------------------------------//
+// ----- 14. Build a React info site | Custom Components part 2----
+/*
+Challenge:
+
+Part 2:
+- Add a `header` element with a nested `nav` element. Inside the `nav`, include a `img` element the image to the React logo inside (src = "..........") and make sure to set the width to something more manageable so it doesn't take up the whole screen.
+- Add an `h1` with some text describing the page. (E.g. "Reasons I'm excited to learn React"). Place it above the ordered list.
+- Add a `footer` after the list that says:
+"copyright 20xx <laast name here> development. All right reserved."
+
+*/
+
+// function Page(){
+// return(
+//     <div>
+//         <header>
+//             <nav>
+//                 <img src = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width= "40px"/>
+//             </nav>
+//         </header>
+//             <h1>Reasons I'm excited to learn React</h1>
+//             <ol>
+//                 <li>It's popular library, so I'll be able to fit in with the cool kids </li>
+//                 <li>I'm more likely to get a job as a developer if I know React </li>
+//             </ol>
+//         <footer>
+//         <small>copyright 2024 last name here development. All right reserved</small>
+//         </footer>
+//     </div>
+// )
+// }
+// ReactDOM.render(<Page/>, document.getElementById("root"))
+
+
+
+//-------------------------------------------------//
+// ----- 16. Build a React info site | Parent/Child Components ----
+/*
+mini Challenge:
+- Move the `header` element from page into its own component called "Header"
+- Move the `footer` into its own component called "Footer"
+- Move the `h1` and `ol` together into component called "MainContent" and render inside page as well.
+*/
+
+// function Header(){
+//     return(
+//         <header>
+//             <nav>
+//                 <img src = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" width= "40px"/>
+//             </nav>
+//         </header>
+//     )
+// }
+
+// function Footer(){
+//     return(
+//         <footer>
+//             <small>copyright 2024 last name here development. All right reserved</small>
+//         </footer>
+//     )
+// }
+
+// function MainContent(){
+//     return(
+//         <div>
+//             <h1>Reasons I'm excited to learn React</h1>
+//             <ol>
+//                 <li>It's popular library, so I'll be able to fit in with the cool kids </li>
+//                 <li>I'm more likely to get a job as a developer if I know React </li>
+//             </ol>
+//     </div>
+//     )
+// }
+
+// function Page(){
+// return(
+//     <div>
+//         <Header/>
+//         <MainContent/>
+//         <Footer/>
+//     </div>
+// )
+// }
+// ReactDOM.render(<Page/>, document.getElementById("root"))
+
+
+
+//-------------------------------------------------//
+// ----- 17. Build a React info site | Styling with Classes ----
+/*
+Challenge:
+- Add an `ul` inside the Header's `nav` and create the following `li`s: "Pricing", "About", & "Content"
+- Using flexbox, line up the nav items horizontally, and put them inline with the React logo.
+- Change the image styling to happen in CSS instead of in-line for pratice, add a new class to the image in order to style it.
+*/
+
+// function Header(){
+//     return(
+//         <header className="header">
+//             <nav className="nav">
+//                 <img src = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="nav-logo"/>
+//                 <ul className="nav-items">
+//                     <li>Pricing</li>
+//                     <li>About</li>
+//                     <li>Contact</li>
+//                 </ul>
+//             </nav>
+//         </header>
+//     )
+// }
+
+// function Footer(){
+//     return(
+//         <footer className="footer">
+//             <small>copyright 2024 last name here development. All right reserved</small>
+//         </footer>
+//     )
+// }
+
+// function MainContent(){
+//     return(
+//         <div>
+//             <h1>Reasons I'm excited to learn React</h1>
+//             <ol>
+//                 <li>It's popular library, so I'll be able to fit in with the cool kids </li>
+//                 <li>I'm more likely to get a job as a developer if I know React </li>
+//             </ol>
+//     </div>
+//     )
+// }
+
+// function Page(){
+// return(
+//     <div>
+//         <Header/>
+//         <MainContent/>
+//         <Footer/>
+//     </div>
+// )
+// }
+// ReactDOM.render(<Page/>, document.getElementById("root"))
+
+
+
+//-------------------------------------------------//
+// ----- 18. Build a React info site | Organize Components ----
+/*
+Challenge:
+- 
+*/
+
+// function Header(){
+//     return(
+//         <header className="header">
+//             <nav className="nav">
+//                 <img src = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="nav-logo"/>
+//                 <ul className="nav-items">
+//                     <li>Pricing</li>
+//                     <li>About</li>
+//                     <li>Contact</li>
+//                 </ul>
+//             </nav>
+//         </header>
+//     )
+// }
+
+// function Footer(){
+//     return(
+//         <footer className="footer">
+//             <small>copyright 2024 last name here development. All right reserved</small>
+//         </footer>
+//     )
+// }
+
+// function MainContent(){
+//     return(
+//         <div>
+//             <h1>Reasons I'm excited to learn React</h1>
+//             <ol>
+//                 <li>It's popular library, so I'll be able to fit in with the cool kids </li>
+//                 <li>I'm more likely to get a job as a developer if I know React </li>
+//             </ol>
+//     </div>
+//     )
+// }
+
+// function Page(){
+// return(
+//     <div>
+//         <Header/>
+//         <MainContent/>
+//         <Footer/>
+//     </div>
+// )
+// }
+// ReactDOM.render(<Page/>, document.getElementById("root"))

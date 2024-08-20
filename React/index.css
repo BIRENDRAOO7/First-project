@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-items{
+    list-style: none;
+    display: flex;
+}
+.nav-items > li{
+    padding: 10px;
+}
+.nav-logo{
+    width: 60px;
+}
+.footer{
+    background-color: rgb(116, 108, 108);
+    color: white;
+    padding: 16px;
+}
+.header{
+    box-shadow: rgba(0, 0, 0, 0.16) 0 1px 50px;
+}

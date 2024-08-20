@@ -1,0 +1,25 @@
+<!-- 15. Build a React info site | Custom Component Quiz -->
+1. What is a React component?
+    Ans: A function that React elements. (UI)
+2. What's wrong with this code?
+```
+function myComponent(){
+    return(
+        <small>I'm tiny text </small>
+    )
+}
+```
+
+3. What's wrong with this code?
+```
+function Header(){
+    return(
+        <header>
+            <nav>
+                <img src = "................png" width= "40px">
+            </nav>
+        </header>
+    )
+}
+
+ReactDOM.render(Header(). document.getElementById("root"))
