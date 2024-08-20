@@ -306,48 +306,35 @@ Challenge:
 - 
 */
 
-// function Header(){
-//     return(
-//         <header className="header">
-//             <nav className="nav">
-//                 <img src = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" className="nav-logo"/>
-//                 <ul className="nav-items">
-//                     <li>Pricing</li>
-//                     <li>About</li>
-//                     <li>Contact</li>
-//                 </ul>
-//             </nav>
-//         </header>
-//     )
-// }
+import Header from "./Header.js"
 
-// function Footer(){
-//     return(
-//         <footer className="footer">
-//             <small>copyright 2024 last name here development. All right reserved</small>
-//         </footer>
-//     )
-// }
+function Footer(){
+    return(
+        <footer className="footer">
+            <small>copyright 2024 last name here development. All right reserved</small>
+        </footer>
+    )
+}
 
-// function MainContent(){
-//     return(
-//         <div>
-//             <h1>Reasons I'm excited to learn React</h1>
-//             <ol>
-//                 <li>It's popular library, so I'll be able to fit in with the cool kids </li>
-//                 <li>I'm more likely to get a job as a developer if I know React </li>
-//             </ol>
-//     </div>
-//     )
-// }
+function MainContent(){
+    return(
+        <div>
+            <h1>Reasons I'm excited to learn React</h1>
+            <ol>
+                <li>It's popular library, so I'll be able to fit in with the cool kids </li>
+                <li>I'm more likely to get a job as a developer if I know React </li>
+            </ol>
+    </div>
+    )
+}
 
-// function Page(){
-// return(
-//     <div>
-//         <Header/>
-//         <MainContent/>
-//         <Footer/>
-//     </div>
-// )
-// }
-// ReactDOM.render(<Page/>, document.getElementById("root"))
+function Page(){
+return(
+    <div>
+        <Header/>
+        <MainContent/>
+        <Footer/>
+    </div>
+)
+}
+ReactDOM.render(<Page/>, document.getElementById("root"))
